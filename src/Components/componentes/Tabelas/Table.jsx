@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "../button/Button";
 import { TrBody, TrHead } from "./Tr";
 
 export default function Table() {
