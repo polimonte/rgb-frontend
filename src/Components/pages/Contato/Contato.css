@@ -1,0 +1,16 @@
+.mcontatos {
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px;
+    width: 500px;
+    
+    border-style: solid;
+    border-width: 2px;
+    border-color: blue;
+    border-radius: 25px;
+}
+
+#btnEnviarContato {
+    width: 100%;
+}

@@ -1,0 +1,30 @@
+.cards {
+    background-color: white;
+    margin: 50px 30px 50px 30px;
+    padding: 10px;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(255, 0, 0);
+    border-radius: 25px;
+}
+
+.cards a{
+    text-decoration: none;
+    color: black;
+}
+
+.cards a:hover {
+    color: red;
+}
+
+.mDestinos {
+    background-color: white;
+    margin: 50px 30px 50px 30px;
+    padding: 10px;
+    
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(255, 0, 0);
+    border-radius: 25px;
+}

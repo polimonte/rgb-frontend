@@ -1,0 +1,30 @@
+
+#menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+}
+
+
+#home:hover {
+    color: rgb(128, 128, 128);
+}
+
+#destinos:hover {
+    color: red;
+}
+
+#promocoes:hover {
+    color: rgb(0, 255, 0);
+}
+
+#contatos:hover {
+    color: blue;
+}
+
+#meusDestinos:hover {
+    color: rgb(128, 128, 128);
+}
