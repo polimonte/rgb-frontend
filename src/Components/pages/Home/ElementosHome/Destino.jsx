@@ -9,11 +9,12 @@ import re from "../../../../img/recife.svg"
 import svd from "../../../../img/salvador.svg"
 import rj from "../../../../img/rj.svg"
 import sl from "../../../../img/saoluis.svg"
+import { Link } from "react-router-dom";
 
 export default function Destino () {
     return (
         <section className="cards">
-            <h3 className="p-2"><a href="/destino.html">DESTINOS.</a></h3>
+            <h3 className="p-2"><Link to="/Destinos">DESTINOS.</Link></h3>
             <div className="row row-cols-1 row-cols-md-4 g-4" >
                 <CardHomeD
                     img={fdn}

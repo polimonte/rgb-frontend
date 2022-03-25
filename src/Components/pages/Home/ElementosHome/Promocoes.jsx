@@ -3,13 +3,14 @@ import CardHomeP from "../../../componentes/cards/CardHomeP";
 import './Promocoes.css';
 import promo2 from '../../../../img/15_.svg'
 import promo4 from '../../../../img/GANHE1.svg'
+import { Link } from "react-router-dom";
 
 
 export default function Promocoes() {
     return (
 
         <section className="mpromocoes">
-            <h3 className="p-2"><a href="/promocoes.html">PROMOÇÕES.</a></h3>
+            <h3 className="p-2"> <Link to="/Promocoes">PROMOÇÕES.</Link></h3>
             <div className="row row-cols-1 row-cols-md-2 g-4" >
                 <CardHomeP
                     img={promo2}
