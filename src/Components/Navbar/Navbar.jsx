@@ -9,7 +9,7 @@ export default function Navbar() {
         <nav className="navbar navbar-expand-lg navbar-light bg-black" id="menu">
             <div className="container-fluid">
                 <Link to="/">
-                    <a href="/" className="navbar-brand">
+                    <a href="#" className="navbar-brand">
                         <ImgNavBar
                             src={Logo}
                             alt="RGB Viagens"
@@ -23,27 +23,27 @@ export default function Navbar() {
                     <ul className="navbar-nav">
                         <li className="nav-item">
                             <Link to="/">
-                                <a href="/" className="nav-link home" id="home" >HOME.</a>
+                                <a href="#" className="nav-link home" id="home" >HOME.</a>
                             </Link>
                         </li>
                         <li className="nav-item">
                             <Link to="/Destinos">
-                                <a href="/Destinos" className="nav-link destinos" id="destinos" >DESTINOS.</a>
+                                <a href="#" className="nav-link destinos" id="destinos" >DESTINOS.</a>
                             </Link>
                         </li>
                         <li className="nav-item">
                             <Link to="/Promocoes">
-                                <a href="/Promocoes" className="nav-link promocoes" id="promocoes" >PROMOÇÕES.</a>
+                                <a href="#" className="nav-link promocoes" id="promocoes" >PROMOÇÕES.</a>
                             </Link>
                         </li>
                         <li className="nav-item">
                             <Link to="/Contato">
-                                <a href="/Contato" className="nav-link contatos" id="contatos">CONTATO.</a>
+                                <a href="#" className="nav-link contatos" id="contatos">CONTATO.</a>
                             </Link>
                         </li>
                         <li className="nav-item">
                             <Link to="/MeuCarrinho">
-                                <a href="/MeuCarrinho" className="nav-link meusDestinos" id="meusDestinos" >MEU CARRINHO.</a>
+                                <a href="#" className="nav-link meusDestinos" id="meusDestinos" >MEU CARRINHO.</a>
                             </Link>
                         </li>
                     </ul>
