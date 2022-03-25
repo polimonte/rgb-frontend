@@ -6,7 +6,7 @@ const FormDestinos = lazy(() => import('../../componentes/forms/Form'));
 
 export default function Destinos() {
     return (
-        <Suspense fallback={<p>Carregando....</p>}>
+        <Suspense fallback={<h2>Carregando....</h2>}>
             <FormDestinos />
         </Suspense>
 

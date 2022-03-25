@@ -1,8 +1,10 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import './Form.css'
-import Input from "../inputs/Input";
+//import Input from "../inputs/Input";
 import { SelectClasses, SelectDestinos } from "../selects/Select";
 import Button from "../button/Button";
+
+const Input = lazy(() => import('../inputs/Input'))
 
 export function FormDestinos() {
 
@@ -15,35 +17,46 @@ export function FormDestinos() {
         <div className="form-cadastroD">
             <form className="row g-4" onSubmit={submit}>
                 <div className="col-md-6 ">
-                    <Input
-                        label="ORIGEM."
-                        type="text"
-                    />
+                    <Suspense fallback={(<p>Carregando....</p>)}>
+                        <Input
+                            label="ORIGEM."
+                            type="text"
+                        />
+                    </Suspense>
+
                 </div>
                 <div className="col-md-6 ">
                     <SelectDestinos />
                 </div>
                 <div className="col-md-6">
+                    <Suspense fallback={(<p>Carregando....</p>)}>
+                        <Input
+                            label="Nº DE PASSAGEIROS."
+                            type="number"
+                        />
+                    </Suspense>
 
-                    <Input
-                        label="Nº DE PASSAGEIROS."
-                        type="number"
-                    />
                 </div>
                 <div className="col-md-6">
                     <SelectClasses />
                 </div>
                 <div className="col-md-6 ">
-                    <Input
-                        label="IDA."
-                        type="date"
-                    />
+                    <Suspense fallback={(<p>Carregando....</p>)}>
+                        <Input
+                            label="IDA."
+                            type="date"
+                        />
+                    </Suspense>
+
                 </div>
                 <div className="col-md-6 ">
-                    <Input
-                        label="VOLTA."
-                        type="date"
-                    />
+                    <Suspense fallback={(<p>Carregando....</p>)}>
+                        <Input
+                            label="VOLTA."
+                            type="date"
+                        />
+                    </Suspense>
+
                 </div>
                 <Button
                     texto="ADICIONE AO CARRINHO."
@@ -68,16 +81,22 @@ export function FormContato() {
             <h3>CONTATO.</h3>
             <form onSubmit={submit}>
                 <div>
-                    <Input
-                        label="NOME COMPLETO."
-                        type="text"
-                    />
+                    <Suspense fallback={(<p>Carregando....</p>)}>
+                        <Input
+                            label="NOME COMPLETO."
+                            type="text"
+                        />
+                    </Suspense>
+
                 </div>
                 <div >
-                    <Input
-                        label="EMAIL."
-                        type="email"
-                    />
+                    <Suspense fallback={(<p>Carregando....</p>)}>
+                        <Input
+                            label="EMAIL."
+                            type="email"
+                        />
+                    </Suspense>
+
                 </div>
                 <div >
                     <label htmlFor="exampleFormControlTextarea1" className="form-label">FALE CONOSCO.</label>
